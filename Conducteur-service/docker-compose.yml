@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  bd:
+    image: mysql:5.7
+    volumes:
+      - bd_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: agriculturepassword
+      MYSQL_DATABASE: agriculture
+      MYSQL_USER: root
+      MYSQL_PASSWORD:
+
+  driver_machine:
+    depends_on:
+      - bd
+    build:
+      dockerfile:
+
+
+
+volumes:
+  - bd_data: {}

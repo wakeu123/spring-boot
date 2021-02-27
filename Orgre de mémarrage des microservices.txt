@@ -1,0 +1,8 @@
+1- Config-service 
+2- Eureka-service
+3- Gateway-service
+4- Conducteur-service
+5- Service-de-gestion-du-travail
+6- Gestion-des-machines-agricoles
+7- Gestion-des-intrants-agricoles
+8- Gestion-de-stock
